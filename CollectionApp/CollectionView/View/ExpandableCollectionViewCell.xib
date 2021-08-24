@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExpandableCollectionViewCell" id="Dxc-3c-WRj" customClass="ExpandableCollectionViewCell" customModule="CollectionApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Au2-4J-Vn8">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBs-nM-yK8">
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="146"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qG-1Y-QZv">
+                                <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0IV-Jy-uy6">
+                                        <rect key="frame" x="314" y="0.5" width="50" height="49"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="fDF-n5-fY9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0IV-Jy-uy6" secondAttribute="bottom" id="02k-0K-Lmb"/>
+                                    <constraint firstAttribute="trailing" secondItem="0IV-Jy-uy6" secondAttribute="trailing" id="JWD-RD-T9f"/>
+                                    <constraint firstItem="0IV-Jy-uy6" firstAttribute="top" secondItem="6qG-1Y-QZv" secondAttribute="top" id="e3W-T5-pWg"/>
+                                    <constraint firstAttribute="height" constant="50" id="wdg-24-nY2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IG-8w-lbF">
+                                <rect key="frame" x="0.0" y="50" width="364" height="96"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6qG-1Y-QZv" firstAttribute="leading" secondItem="KBs-nM-yK8" secondAttribute="leading" id="6Ae-7z-Fgf"/>
+                            <constraint firstItem="4IG-8w-lbF" firstAttribute="leading" secondItem="KBs-nM-yK8" secondAttribute="leading" id="Kar-WH-lF0"/>
+                            <constraint firstAttribute="trailing" secondItem="4IG-8w-lbF" secondAttribute="trailing" id="Q1r-nl-LnO"/>
+                            <constraint firstItem="4IG-8w-lbF" firstAttribute="top" secondItem="6qG-1Y-QZv" secondAttribute="bottom" id="TiC-Lz-N3q"/>
+                            <constraint firstAttribute="bottom" secondItem="4IG-8w-lbF" secondAttribute="bottom" id="Ya6-8F-u1X"/>
+                            <constraint firstItem="6qG-1Y-QZv" firstAttribute="top" secondItem="KBs-nM-yK8" secondAttribute="top" id="Zko-Rt-bq4"/>
+                            <constraint firstAttribute="trailing" secondItem="6qG-1Y-QZv" secondAttribute="trailing" id="y0l-oh-Bam"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KBs-nM-yK8" secondAttribute="bottom" id="4fZ-V9-fWw"/>
+                    <constraint firstAttribute="trailing" secondItem="KBs-nM-yK8" secondAttribute="trailing" id="QgD-RE-xcy"/>
+                    <constraint firstItem="KBs-nM-yK8" firstAttribute="leading" secondItem="Au2-4J-Vn8" secondAttribute="leading" id="dRh-h8-LEj"/>
+                    <constraint firstItem="KBs-nM-yK8" firstAttribute="top" secondItem="Au2-4J-Vn8" secondAttribute="top" id="gA2-Wk-6Ho"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="364" height="146"/>
+            <connections>
+                <outlet property="bodyView" destination="4IG-8w-lbF" id="dse-sb-X1v"/>
+                <outlet property="containerView" destination="KBs-nM-yK8" id="hcV-Bs-xSd"/>
+                <outlet property="headerImage" destination="0IV-Jy-uy6" id="RjP-GQ-cO4"/>
+                <outlet property="headerView" destination="6qG-1Y-QZv" id="ddi-XW-fb0"/>
+            </connections>
+            <point key="canvasLocation" x="262.31884057971018" y="140.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.down.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
