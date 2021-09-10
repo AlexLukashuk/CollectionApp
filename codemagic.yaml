@@ -2,10 +2,9 @@ workflows:
   collection-workflow:
     name: collection pipeline
     scripts:
-        - name: iOS test
-        script: |
+        -  name: iOS test
+           script: |
             xcode-project run-tests \
                 --workspace CollectionApp.xcworkspace \
                 --scheme CollectionApp \
                 --device "iPhone 11"
-  test_report: build/ios/test/*.xml
