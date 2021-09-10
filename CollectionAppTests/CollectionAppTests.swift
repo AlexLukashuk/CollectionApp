@@ -30,4 +30,8 @@ class CollectionAppTests: XCTestCase {
         }
     }
 
+    func testEquel() throws {
+        XCTAssertEqual(2, 4 - 2)
+    }
+    
 }
