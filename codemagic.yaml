@@ -5,6 +5,6 @@ workflows:
         -  name: iOS test
            script: |
             xcode-project run-tests \
-                --workspace CollectionApp.xcodeproj \
+                --workspace CollectionApp.xcworkspace \
                 --scheme CollectionApp \
                 --device "iPhone 11"
