@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7596A77826F49F4400E091EC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75F73C3526D3DF4900D1EB89 /* Info.plist */; };
 		7596A77926F49F4600E091EC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75F73C3526D3DF4900D1EB89 /* Info.plist */; };
+		7596A77D26F5BFF600E091EC /* config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 7596A77B26F5BFF600E091EC /* config.yaml */; };
+		7596A77E26F5BFF600E091EC /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 7596A77C26F5BFF600E091EC /* codemagic.yaml */; };
 		75F73C1A26D3DF4700D1EB89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F73C1926D3DF4700D1EB89 /* AppDelegate.swift */; };
 		75F73C1C26D3DF4700D1EB89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F73C1B26D3DF4700D1EB89 /* SceneDelegate.swift */; };
 		75F73C1E26D3DF4700D1EB89 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F73C1D26D3DF4700D1EB89 /* CollectionViewController.swift */; };
@@ -51,6 +53,8 @@
 		52C97345A85973FB25FC567C /* Pods-CollectionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionApp.debug.xcconfig"; path = "Target Support Files/Pods-CollectionApp/Pods-CollectionApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6150ABA5E19E4EECB42E7385 /* Pods_CollectionAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		692E3B15DE97DC3AFFF75537 /* Pods-CollectionApp-CollectionAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionApp-CollectionAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-CollectionApp-CollectionAppUITests/Pods-CollectionApp-CollectionAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7596A77B26F5BFF600E091EC /* config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = config.yaml; sourceTree = "<group>"; };
+		7596A77C26F5BFF600E091EC /* codemagic.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		75F73C1626D3DF4700D1EB89 /* CollectionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F73C1926D3DF4700D1EB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F73C1B26D3DF4700D1EB89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,9 +113,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7596A77A26F5BFF600E091EC /* circleci */ = {
+			isa = PBXGroup;
+			children = (
+				7596A77B26F5BFF600E091EC /* config.yaml */,
+			);
+			path = circleci;
+			sourceTree = "<group>";
+		};
 		75F73C0D26D3DF4700D1EB89 = {
 			isa = PBXGroup;
 			children = (
+				7596A77A26F5BFF600E091EC /* circleci */,
+				7596A77C26F5BFF600E091EC /* codemagic.yaml */,
 				75F73C1826D3DF4700D1EB89 /* CollectionApp */,
 				75F73C3226D3DF4900D1EB89 /* CollectionAppTests */,
 				75F73C3D26D3DF4900D1EB89 /* CollectionAppUITests */,
@@ -334,9 +348,11 @@
 			files = (
 				75F73C5926D3E43000D1EB89 /* ExpandableCollectionViewCell.xib in Resources */,
 				75F73C2926D3DF4900D1EB89 /* LaunchScreen.storyboard in Resources */,
+				7596A77D26F5BFF600E091EC /* config.yaml in Resources */,
 				75F73C2626D3DF4900D1EB89 /* Assets.xcassets in Resources */,
 				7596A77826F49F4400E091EC /* Info.plist in Resources */,
 				75F73C2126D3DF4700D1EB89 /* CollectionViewController.storyboard in Resources */,
+				7596A77E26F5BFF600E091EC /* codemagic.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
